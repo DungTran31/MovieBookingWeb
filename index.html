@@ -6,6 +6,7 @@
     <title>DMHT Cinema</title>
     <link rel="stylesheet" href="./asset/css/main.css"/>
     <link rel="stylesheet" href="./asset/css/style.css"/>
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,40 +19,40 @@
   <body>
     <div class="main-page">
       <div class="header">
-        <nav class="header__navbar">
+        <nav class="header__navbar ">
           <ul class="header__navbar-list">
-              <li class="header__navbar-item">
+              <li class="header__navbar-item hide-on-mobile-tablet">
                 <i class="header__navbar-icon far fa-bell"></i>
                 <a href="/" class="header__navbar-item-link">
                     Thông báo
                 </a>
               </li>
-              <li class="header__navbar-item">
+              <li class="header__navbar-item hide-on-mobile-tablet">
                 <i class="header__navbar-icon fa-solid fa-clock-rotate-left"></i>
                 <a href="/" class="header__navbar-item-link">
                     Lịch sử
                 </a>
               </li>
-              <li class="header__navbar-item">
+              <li class="header__navbar-item hide-on-mobile-tablet">
                 <i class="header__navbar-icon far fa-question-circle"></i>
                 <a href="/" class="header__navbar-item-link">
                     Trợ giúp
                 </a>
               </li>
-              <li class="header__navbar-item header__navbar-item--separate"><h2 class="header__navbar-item-link js-login">Đăng ký</h2></li>
-              <li class="header__navbar-item"><h2 class="header__navbar-item-link js-login">Đăng nhập</h2></li>
+              <li class="header__navbar-item hide-on-mobile header__navbar-item--separate"><h2 class="header__navbar-item-link js-login">Đăng ký</h2></li>
+              <li class="header__navbar-item hide-on-mobile"><h2 class="header__navbar-item-link js-login">Đăng nhập</h2></li>
           </ul>
         </nav>
         <div class="header__search">
-          <a href="/"><img class="header__logo" alt="Logo nhóm" src="./asset/img/logo.svg"/></a>
-          <div class="search-bar1">
+          <a href="/"><img class="header__logo" alt="Logo nhóm" src="./asset/img/Logo.png"/></a>
+          <div class="search-bar1 hide-on-mobile-tablet">
             <input class="search-input" type="text" placeholder="Tìm kiếm">
             <i class="search-icon fa-solid fa-magnifying-glass"></i>
           </div>
-          <img class="header__img" src="./asset/img/Ticket.png" alt="Ticket">
+          <img class="header__img hide-on-mobile-tablet" src="./asset/img/Ticket.png" alt="Ticket">
         </div>
         
-        <div class="header__navbar-list-head">
+        <div class="header__navbar-list-head hide-on-mobile-tablet"">
           <ul class="header__navbar-list2">
             <li class="header__navbar-item"><a class="header__navbar-item-link" href="">Lịch chiếu phim</a></li>
             <li class="header__navbar-item"><a class="header__navbar-item-link" href="">Phim</a></li>
@@ -64,7 +65,7 @@
       
       <div class="container">
         <div class="row">
-          <div class="slideshow-container">
+          <div class="slideshow-container hide-on-mobile">
             <div class="mySlides fade">
               <img src="./asset/img/Poster1.jpg" alt="Poster1">
             </div>
@@ -83,7 +84,7 @@
         </div>
 
         <div class="row">
-          <div class="sidebar col-lg-3">
+          <div class="sidebar col-lg-3 col-md-0 hide-on-mobile-tablet">
             <ul class="sidebar__list">
               <li><h2>Thể loại phim</h2></li>
               <li><input type="checkbox" name="" id=""> Action</li>
@@ -102,15 +103,15 @@
               <img src="./asset/img/Popcorn.png" alt="Popcorn">
             </ul>
           </div>
-          <div class="main-container col-lg-9">
+          <div class="main-container col-lg-9 col-md-12">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie1.jpg" alt="Movie1">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -130,13 +131,13 @@
                   <label for="star1" title="text">1 star</label>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie2.jpg" alt="Movie2">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -156,13 +157,13 @@
                   <label for="star1" title="text">1 star</label>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie3.jpg" alt="Movie3">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -185,13 +186,13 @@
             </div>
             <br>
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie4.jpg" alt="Movie4">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -211,13 +212,13 @@
                   <label for="star1" title="text">1 star</label>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie5.jpg" alt="Movie5">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -237,13 +238,13 @@
                   <label for="star1" title="text">1 star</label>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie6.jpg" alt="Movie6">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -266,13 +267,13 @@
             </div>
             <br>
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie7.jpg" alt="Movie7>
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -292,13 +293,13 @@
                   <label for="star1" title="text">1 star</label>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie8.jpg" alt="Movie8">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -318,13 +319,13 @@
                   <label for="star1" title="text">1 star</label>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-4">
                 <div class="movie-container"> 
                   <a href="#">
                     <img src="./asset/img/Movie9.jpg" alt="Movie9">
                   </a>
                   <a href="#">
-                    <button class="movie-info"><span>Chi tiết</span></button>
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
                   </a>
                   <a href="#">
                     <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
@@ -367,10 +368,10 @@
         </div>
         
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-12">
             <h2 class="comment-header"><a class="comment-header-link" href="#">Bình luận phim</a></h2>
             <div class="row">
-              <div class="col-lg-4 comment-container-img">
+              <div class="col-lg-4 col-md-12 comment-container-img">
                 <a class="comment-link" href="#">
                   <img class="comment-img" src="./asset/img/Comment1.jpg" alt="Comment1">
                 </a>
@@ -381,7 +382,7 @@
                     <a class="comment-title" href="#">
                      [Preview] Đất Rừng Phương Nam: Có Vượt Qua Cái Bóng Khổng Lồ Của Bản Cũ?
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">0</span> Like
@@ -412,7 +413,7 @@
                     <a class="comment-title" href="#">
                       [Review] The Nun 2: Valak Đã "Ngủ Yên"?
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">262</span> Like
@@ -443,7 +444,7 @@
                     <a class="comment-title" href="#">
                       [Review] The Creator: Khi Robot Biết Nói Tiếng Việt Và Nhân Văn Hơn Cả Con Người
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">24</span> Like
@@ -474,7 +475,7 @@
                     <a class="comment-title" href="#">
                       [Review] A Haunting In Venice: Khi Thám Tử Đối Đầu Ma Quỷ!
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">11</span> Like
@@ -508,7 +509,7 @@
                     <a class="comment-title" href="#">
                       The Exorcist - Thương Hiệu Kinh Dị Đình Đám Nhất Thế Kỷ 20 Trở Lại
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">1</span> Like
@@ -539,7 +540,7 @@
                     <a class="comment-title" href="#">
                       Có Gì Mới Trong Bom Tấn Sắp Ra Mắt Của Leonardo DiCaprio?
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">36</span> Like
@@ -570,7 +571,7 @@
                     <a class="comment-title" href="#">
                       Lục Lọi Những Easter Egg Ẩn Giấu Trong The Nun II
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">15</span> Like
@@ -601,7 +602,7 @@
                     <a class="comment-title" href="#">
                       Valak Đã "Đại Náo" Phòng Vé Ra Sao?
                     </a>
-                    <div class="comment-block">
+                    <div class="comment-block hide-on-mobile-tablet">
                       <button class="comment-like__btn">
                         <i class="icon far fa-thumbs-up"></i>
                         <span class="count">110</span> Like
@@ -715,7 +716,7 @@
 
       <div class="footer">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <h2 class="footer-header">Giới thiệu thành viên</h2>
             <ul class="footer-list">
               <li class="footer-list-item">Trần Tiến Dũng</li>
@@ -724,7 +725,7 @@
               <li class="footer-list-item">Nguyễn Mai Thanh</li>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <h2 class="footer-header">Điều khoản sử dụng</h2>
             <ul class="footer-list">
               <a class="footer-list-item-link" href="">
@@ -741,7 +742,7 @@
               </a>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-xl-6">
             <h2 class="footer-header">Chăm sóc khách hàng</h2>
             <ul class="footer-list">
               <li class="footer-list-item">Hotline: 6999999</li>
@@ -750,7 +751,7 @@
               <li class="footer-list-item">Địa chỉ: ĐH GTVT</li>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-xl-6">
             <div class="row">
               <h2 class="footer-header">Kết nối với chúng tôi</h2>
               <ul class="footer-list-apps">
@@ -796,7 +797,6 @@
       </div>
     </div>
 
-
     <div class="modal--box js-modal--box">
       <div class="modal--container js-modal--container">
         <div class="modal--close js-modal--close">
@@ -829,6 +829,18 @@
       </div>
     </div>
     
+    <div class="modal--box2 js-modal--box2">
+      <div class="modal--container2 js-modal--container2">
+        <div class="modal--close2 js-modal--close2">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <header class="modal--header">
+          <i class="modal--header-icon fa-solid fa-film"></i>
+          Chi tiết phim
+        </header>
+      </div>
+    </div>
+
     <div class="modal-login-container">
       <div class="modal-main-form-container">
         <div id="modal-form_section" class="modal-form-container">
@@ -909,6 +921,7 @@
         </div>
       </div>
     </div>
+
     <script src="./asset/js/main.js"></script>
   </body>
 </html>

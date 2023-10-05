@@ -31,6 +31,29 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+/* bật tắt modal login */
+const loginBtns = document.querySelectorAll('.js-login')
+const modalLogin = document.querySelector('.modal-login-container')
+const modalLoginContainer = document.querySelector('.modal-main-form-container')
+
+
+function showLogin() {
+    modalLogin.classList.add('open')
+}
+
+function hideLogin() {
+    modalLogin.classList.remove('open')
+}
+
+for (const loginBtn of loginBtns) {
+    loginBtn.addEventListener('click', showLogin)
+}
+
+modalLogin.addEventListener('click', hideLogin)
+modalLoginContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+})
+
 /* bật tắt nút mua vé */
 const buyBtns = document.querySelectorAll('.js-buy-ticket')
 const modalBox = document.querySelector('.js-modal--box')
@@ -52,6 +75,30 @@ for (const buyBtn of buyBtns) {
 modalClose.addEventListener('click', hideBuyTickets)
 modalBox.addEventListener('click', hideBuyTickets)
 modalContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+})
+
+/* bật tắt nút chi tiết */
+const infoBtns = document.querySelectorAll('.js-movie-info')
+const modalBox2 = document.querySelector('.js-modal--box2')
+const modalContainer2 = document.querySelector('.js-modal--container2')
+const modalClose2 = document.querySelector('.js-modal--close2')
+
+function showMovieInfo() {
+    modalBox2.classList.add('open2')
+}
+
+function hideMovieInfo() {
+    modalBox2.classList.remove('open2')
+}
+
+for (const infoBtn of infoBtns) {
+    infoBtn.addEventListener('click', showMovieInfo)
+}
+
+modalClose2.addEventListener('click', hideMovieInfo)
+modalBox2.addEventListener('click', hideMovieInfo)
+modalContainer2.addEventListener('click', function (event) {
     event.stopPropagation()
 })
 
@@ -98,25 +145,4 @@ buttons.forEach((button) => {
     });
 });
 
-/* bật tắt modal login */
-const loginBtns = document.querySelectorAll('.js-login')
-const modalLogin = document.querySelector('.modal-login-container')
-const modalLoginContainer = document.querySelector('.modal-main-form-container')
 
-
-function showBuyTickets() {
-    modalLogin.classList.add('open')
-}
-
-function hideBuyTickets() {
-    modalLogin.classList.remove('open')
-}
-
-for (const loginBtn of loginBtns) {
-    loginBtn.addEventListener('click', showBuyTickets)
-}
-
-modalLogin.addEventListener('click', hideBuyTickets)
-modalLoginContainer.addEventListener('click', function (event) {
-    event.stopPropagation()
-})

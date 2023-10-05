@@ -97,14 +97,17 @@
 
 .header__logo {
     margin-left: 20px;
-    padding: 10px;
+    padding: 0;
     position: relative;
-    top: -10px;
+    top: 10px;
+    width: 35%;
+    left: 46px;
 }
 
 .search-bar1 {
     position: absolute;
     left: 38%;
+    top: 26px;
 }
 
 
@@ -241,6 +244,7 @@
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    height: fit-content;
 }
 
 .movie-container:first-of-type {
@@ -312,7 +316,7 @@
     display: none;
 }
 
-.movie-container img:hover {
+.movie-container:hover img{
     filter: blur(2px);
 }
 
@@ -823,6 +827,7 @@
 
 .modal-main-form-container {
     min-width: 800px;
+    max-width: calc(100% - 16px);
     background-color: rgba(255, 255, 255, 0.152);
     border-radius: 10px;
     position: relative;
@@ -999,4 +1004,54 @@
 
 .modal-login-form {
     transform: translateX(100%);
+}
+
+/* Modal movie info */
+.modal--box2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    display: none;
+}
+
+.modal--box2.open2 {
+    display: flex;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.modal--container2 {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 16px);
+    min-height: 300px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal--close2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(235, 235, 245, 0.6);
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal--close2:hover {
+    opacity: 1;
 }
