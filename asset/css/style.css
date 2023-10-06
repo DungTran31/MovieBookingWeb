@@ -1020,7 +1020,7 @@
     display: none;
 }
 
-.modal--box2.open2 {
+.modal--box2.open {
     display: flex;
 }
 
@@ -1055,3 +1055,43 @@
 .modal--close2:hover {
     opacity: 1;
 }
+
+.modal--header2 {
+    background-color: #613690;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgba(235, 235, 245, 0.6);
+}
+
+.modal--body2 {
+    display: flex;
+}
+
+.modal--container-img2 {
+    width: 25%;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+.modal--container-img2 img {
+    height: 300px;
+}
+
+.modal--container-text2 {
+    width: 75%;
+    padding: 10px;
+}
+
+.modal--container-text-info2 {
+    border-top: 2px solid #757575;
+}
+
+.modal--movie-list {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+

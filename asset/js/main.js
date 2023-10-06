@@ -85,11 +85,11 @@ const modalContainer2 = document.querySelector('.js-modal--container2')
 const modalClose2 = document.querySelector('.js-modal--close2')
 
 function showMovieInfo() {
-    modalBox2.classList.add('open2')
+    modalBox2.classList.add('open')
 }
 
 function hideMovieInfo() {
-    modalBox2.classList.remove('open2')
+    modalBox2.classList.remove('open')
 }
 
 for (const infoBtn of infoBtns) {
