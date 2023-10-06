@@ -131,6 +131,7 @@ inputs.forEach(function (input) {
     const parentElement = input.parentElement.parentElement;
     parentElement.classList.add("modal-login-box-animation");
   });
+  // trạng thái focus mà bị mất focus
   input.addEventListener("blur", function () {
     const parentElement = input.parentElement.parentElement;
     parentElement.classList.remove("modal-login-box-animation");
@@ -141,6 +142,8 @@ const buttons = document.querySelectorAll("#modal-multiple-btn button");
 const form_container = document.getElementById('modal-form_section')
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
+        // left-right sẽ đc thêm vào thẻ có id modal-form_section nếu chưa có 
+        // nếu đã tồn tại thì sẽ đc xóa đi
         form_container.classList.toggle("left-right");
     });
 });
