@@ -148,4 +148,12 @@ buttons.forEach((button) => {
     });
 });
 
+// mua vé
+const buyTickets = document.querySelectorAll('.modal--hour-list-item')
+function showBuys() {
+    alert("Đặt vé thành công!")
+}
 
+for (const buyTicket of buyTickets) {
+    buyTicket.addEventListener('click', showBuys)
+}
