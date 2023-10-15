@@ -1,0 +1,40 @@
+/* Mobile & tablet */
+@media (max-width: 992px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        min-height: 160px;
+    }
+
+    .header__search {
+        position: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 992px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__logo {
+        position: relative;
+        top: -30px;
+        left: 30%;
+    } }
+
+/* PC */
+@media (min-width: 993px) {
+    .hide-on-pc {
+        display: none;
+    }
+}    
