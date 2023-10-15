@@ -296,7 +296,6 @@
 .movie-rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
-
 .movie-ticket {
     position: absolute;
     top: 50%;
