@@ -153,7 +153,6 @@
     border-bottom:2px solid #fff;
 }
 
-
 .movie-name{
     color:#337ab7;
     font-size: 24px;
@@ -183,8 +182,8 @@
 
 .movie-container:hover .play-button{
     position: absolute;
-    left: 30%;
-    bottom: 55%;
+    left: 100px;
+    top: 150px;
     font-size: 40px;
     display: flex;
 }
@@ -198,8 +197,8 @@
 
 .movie-container:hover .movie-ticket{
     position: absolute;
-    right: 45%;
-    top: 35%;
+    left: 70px;
+    top: 150px;
     font-size: 26px;
     display: block;
 }

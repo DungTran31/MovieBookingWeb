@@ -39,8 +39,8 @@
                     Trợ giúp
                 </a>
               </li>
-              <li class="header__navbar-item hide-on-mobile header__navbar-item--separate"><h2 class="header__navbar-item-link js-login">Đăng ký</h2></li>
-              <li class="header__navbar-item hide-on-mobile"><h2 class="header__navbar-item-link js-login">Đăng nhập</h2></li>
+              <li class="header__navbar-item hide-on-mobile-tablet header__navbar-item--separate"><h2 class="header__navbar-item-link js-login">Đăng ký</h2></li>
+              <li class="header__navbar-item hide-on-mobile-tablet"><h2 class="header__navbar-item-link js-login">Đăng nhập</h2></li>
           </ul>
         </nav>
         <div class="header__search">
@@ -74,20 +74,20 @@
             <div class="main-container col-lg-3 col-md-4 col-sm-12">
               <div class="movie-container now-showing">
                 <a href="">
-                  <img src="asset2/img/movie1.png" alt="The Dark Knight">
+                  <img src="asset2/img/movie6.jpg" alt="The Dark Knight">
                 </a>
-                <a href="">
-                  <button class="play-button"><i class=" fa-solid fa-play"></i></button>
-                </a>
+                <button type="button" class="play-button" data-bs-toggle="modal" data-bs-target="#myModal">
+                  <i class=" fa-solid fa-play"></i>
+                </button>
               </div>
               <div class="porduct-info">
                 <div class="movie-name">
-                  <span>The Dark Knight</span>
+                  <span>Người vợ cuối cùng</span>
                 </div>
                 <div class="movie-info">
                   <ul class="list-unstyled">
-                    <li>Thể loại: Hành Động </li>
-                    <li>Thời lượng: 152 phút</li>
+                    <li>Thể loại: Tình cảm, Tâm lý </li>
+                    <li>Thời lượng: 100 phút</li>
                   </ul>
                 </div>
               </div>
@@ -99,7 +99,7 @@
                   <img src="asset2/img/movie2.png" alt="The Dark Knight">
                 </a>
                 <a href="">
-                  <button class="play-button"><i class=" fa-solid fa-play"></i></button>
+                  <button class="play-button "><i class=" fa-solid fa-play"></i></button>
                 </a>
               </div>
               <div class="porduct-info">
@@ -184,7 +184,7 @@
             <div class="main-container col-lg-3 col-md-4 col-sm-12">
               <div class="movie-container now-showing">
                 <a href="">
-                  <img src="asset2/img/movie6.jpg" alt="The Dark Knight">
+                  <img src="asset2/img/movie1.png" alt="The Dark Knight">
                 </a>
                 <a href="">
                   <button class="play-button"><i class=" fa-solid fa-play"></i></button>
@@ -192,12 +192,12 @@
               </div>
               <div class="porduct-info">
                 <div class="movie-name">
-                  <span>Người vợ cuối cùng</span>
+                  <span>The Dark Knight</span>
                 </div>
                 <div class="movie-info">
                   <ul class="list-unstyled">
-                    <li>Thể loại: Tình cảm, Tâm lý</li>
-                    <li>Thời lượng: 100 phút</li>
+                    <li>Thể loại: Hành động</li>
+                    <li>Thời lượng: 152 phút</li>
                   </ul>
                 </div>
               </div>
@@ -294,7 +294,34 @@
 
     
 
-          
+    
+    
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Trailer</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <iframe width="470" height="300" src="https://www.youtube.com/embed/uHW-JsNu6tk?rel=0&showinfo=0&autoplay=1">
+            </iframe>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
      <div class="modal-login-container">
         <div class="modal-main-form-container">
           <div id="modal-form_section" class="modal-form-container">
