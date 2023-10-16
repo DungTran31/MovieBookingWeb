@@ -78,29 +78,7 @@ modalContainer.addEventListener('click', function (event) {
     event.stopPropagation()
 })
 
-/* bật tắt nút chi tiết */
-const infoBtns = document.querySelectorAll('.js-movie-info')
-const modalBox2 = document.querySelector('.js-modal--box2')
-const modalContainer2 = document.querySelector('.js-modal--container2')
-const modalClose2 = document.querySelector('.js-modal--close2')
 
-function showMovieInfo() {
-    modalBox2.classList.add('open')
-}
-
-function hideMovieInfo() {
-    modalBox2.classList.remove('open')
-}
-
-for (const infoBtn of infoBtns) {
-    infoBtn.addEventListener('click', showMovieInfo)
-}
-
-modalClose2.addEventListener('click', hideMovieInfo)
-modalBox2.addEventListener('click', hideMovieInfo)
-modalContainer2.addEventListener('click', function (event) {
-    event.stopPropagation()
-})
 
 /* btn like comment*/ 
 const likeBtns = document.querySelectorAll(".comment-like__btn");
