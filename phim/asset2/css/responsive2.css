@@ -67,7 +67,7 @@
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 992px) {
+@media (min-width: 766px) and (max-width: 992px) {
     .hide-on-tablet {
         display: none;
     }
