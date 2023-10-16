@@ -56,6 +56,14 @@
         font-size: 70px;
         display: flex;
     }
+
+    .movie-container:hover .movie-ticket{
+        position: absolute;
+        left: 170px;
+        top: 380px;
+        font-size: 40px;
+        display: block;
+    }
 }
 
 /* Tablet */
@@ -92,6 +100,14 @@
         top: 150px;
         font-size: 40px;
         display: flex;
+    }
+
+    .movie-container:hover .movie-ticket{
+        position: absolute;
+        left: 55px;
+        top: 150px;
+        font-size: 26px;
+        display: block;
     }
 }
 /* PC */
