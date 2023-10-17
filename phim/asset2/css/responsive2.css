@@ -56,10 +56,18 @@
         font-size: 70px;
         display: flex;
     }
+
+    .movie-container:hover .movie-ticket{
+        position: absolute;
+        left: 170px;
+        top: 380px;
+        font-size: 40px;
+        display: block;
+    }
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 992px) {
+@media (min-width: 766px) and (max-width: 992px) {
     .hide-on-tablet {
         display: none;
     }
@@ -92,6 +100,14 @@
         top: 150px;
         font-size: 40px;
         display: flex;
+    }
+
+    .movie-container:hover .movie-ticket{
+        position: absolute;
+        left: 55px;
+        top: 150px;
+        font-size: 26px;
+        display: block;
     }
 }
 /* PC */
