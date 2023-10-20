@@ -192,8 +192,11 @@
     border-radius: 20px;
     max-width: 100%;
 }
-.kkt{
-    display: flex;
+.container-2 .gioithieukkt{
+    padding-left: 20px;
+}
+.container-2 .img1{
+    width: 100%;
 }
 .gioithieukkt{
     font-size: 200%;
@@ -232,6 +235,79 @@
 .gioithieukkt button:hover{
     background-color: rebeccapurple;
 }
+.theloai{
+    font-size: 20px;
+}
+.theloai i{
+    padding-right: 5px
+}
+.thoigian i{
+    padding-right: 5px;
+    font-size: 20px;
+}
+.cachchieu{
+    padding: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.gioithieukkt ul{
+    font-size: 15px;
+}
+.container-3 .row-2 .img-kkt img{
+    border-radius: 20px;
+    max-width: 100%;
+}
+.container-3 .row-2 .in4-aqms .theloai i {
+    padding-right: 5px;
+
+}
+.container-3 .row-2 .in4-aqms .thoigian{
+    padding-right: 5px;
+}
+.container-3 .row-2 .in4-aqms .cachchieu{
+    padding:0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.container-3 .row-2 .giochieu{
+    display: flex;
+}
+.row-3 .img-GL img{
+    border-radius: 20px;
+    max-width: 100%;
+}
+.row-3 .in4-gl{
+    padding-left: 20px;
+}
+.row-3 .theloai i{
+    padding-right: 5px;
+}
+.row-3 .thoigian i{
+    padding-right: 5px;
+}
+.row-3 .cachchieu {
+    padding:0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.row-3 .giochieu{
+    display: flex;
+}
+.slideshow p{
+    font-size: 250%;
+    font-weight: bold;
+}
+.slideshow img{
+    padding-bottom: 50px;
+}
+.chonghe{
+    background: linear-gradient(168.44deg, #2e335a, #1c1b33);
+    justify-content: center;
+}
+.chonghe table{
+    border: 5px solid black;
+}
+
 .row-2{
     display: flex;
     padding-top: 50px;
@@ -366,6 +442,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     color:wheat;
+    padding-bottom: 10px;
 }
 .chonghe .ghe i:hover{
     color: tomato;
@@ -379,25 +456,51 @@
     bottom: 10%;
     width: 85%;
     background-color: rgba(25, 24, 24, 0.9);
-    align-items: center;
+    
     z-index: 4;
     display: none;
-    font-size: 200%;
+    font-size: 100%;
     font-weight: bold;
     transform: scaleX(1);
+}
+.new li{
+    list-style: none;
+    align-items: center;
+}
+.new ul{
+    margin: 0 auto;
 }
 .chonghe .x button{
     transition: .5s;
     border-radius: 10px;
 }
 .chonghe .x button:hover{
-    background-color: #48319D;
+    background-color: red;
 }
 .new button{
     transition: .5s;
 }
 .new button:hover{
     background-color: #48319D;
+}
+.zoom p{
+    position: absolute;
+    background-color: black;
+}
+.kekientao{
+    position: fixed;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    z-index: 4;
+    display: none;
+    font-size: 200%;
+    font-weight: bold;
+    transform: scaleX(1);
+    color: rgba(235, 235, 245, 0.6); ;
 }
 /* Footer */
 .footer {

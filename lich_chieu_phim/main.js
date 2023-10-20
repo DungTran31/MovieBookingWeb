@@ -65,6 +65,10 @@ function showTable() {
     var table = document.getElementById("chonGhe");
     table.style.display = "flex";
 };
+function showkkt() {
+    var table = document.getElementById("kekientao");
+    table.style.display = "flex";
+};
 function out(){
     var table = document.getElementById("chonGhe");
     table.style.display = "none";
