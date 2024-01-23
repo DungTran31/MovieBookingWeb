@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <title>DMHT Cinema</title>
+    <link rel="stylesheet" href="./asset/css/main.css"/>
+    <link rel="stylesheet" href="./asset/css/style.css"/>
+    <link rel="stylesheet" href="./asset/css/responsive.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="asset/img/logo.ico"/>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="header">
+        <nav class="header__navbar ">
+          <ul class="header__navbar-list">
+              <li class="header__navbar-item hide-on-mobile-tablet">
+                <i class="header__navbar-icon far fa-bell"></i>
+                <a href="/" class="header__navbar-item-link">
+                    Thông báo
+                </a>
+              </li>
+              <li class="header__navbar-item hide-on-mobile-tablet">
+                <i class="header__navbar-icon fa-solid fa-clock-rotate-left"></i>
+                <a href="/" class="header__navbar-item-link">
+                    Lịch sử
+                </a>
+              </li>
+              <li class="header__navbar-item hide-on-mobile-tablet">
+                <i class="header__navbar-icon far fa-question-circle"></i>
+                <a href="/" class="header__navbar-item-link">
+                    Trợ giúp
+                </a>
+              </li>
+              <li class="header__navbar-item hide-on-mobile header__navbar-item--separate"><h2 class="header__navbar-item-link js-login">Đăng ký</h2></li>
+              <li class="header__navbar-item hide-on-mobile"><h2 class="header__navbar-item-link js-login">Đăng nhập</h2></li>
+          </ul>
+        </nav>
+        <div class="header__search">
+          <a href="#"><img class="header__logo" alt="Logo nhóm" src="./asset/img/Logo.png"/></a>
+          <div class="search-bar1 hide-on-mobile-tablet">
+            <input class="search-input" type="text" placeholder="Tìm kiếm">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+          </div>
+          <img class="header__img hide-on-mobile-tablet" src="./asset/img/Ticket.png" alt="Ticket">
+        </div>
+        
+        <div class="header__navbar-list-head hide-on-mobile-tablet">
+          <ul class="header__navbar-list2">
+            <li class="header__navbar-item"><a class="header__navbar-item-link" href="../lich_chieu_phim/index.html">Lịch chiếu phim</a></li>
+            <li class="header__navbar-item"><a class="header__navbar-item-link" href="../phim/index2.html">Phim</a></li>
+            <li class="header__navbar-item"><a class="header__navbar-item-link" href="../sale/index.html">Ưu đãi</a></li>
+            <li class="header__navbar-item"><a class="header__navbar-item-link" href="">Thành viên</a></li>
+            <li class="header__navbar-item"><a class="header__navbar-item-link" href="">Hỗ trợ</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="slideshow-container hide-on-mobile">
+            <div class="mySlides fade">
+              <img src="./asset/img/Poster1.jpg" alt="Poster1">
+            </div>
+            <div class="mySlides fade">
+              <img src="./asset/img/Poster2.jpg" alt="Poster2">
+            </div>
+            <div class="mySlides fade">
+              <img src="./asset/img/Poster3.jpg" alt="Poster3">
+            </div>
+          </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div> 
+        </div>
+
+        <div class="row">
+          <div class="sidebar col-lg-3 col-md-0 hide-on-mobile-tablet">
+            <ul class="sidebar__list">
+              <li><h2>Thể loại phim</h2></li>
+              <li><input type="checkbox" name="" id=""> Action</li>
+              <li><input type="checkbox" name="" id=""> Adventure</li>
+              <li><input type="checkbox" name="" id=""> Biography</li>
+              <li><input type="checkbox" name="" id=""> Comedy</li>
+              <li><input type="checkbox" name="" id=""> Crime</li>
+              <li><input type="checkbox" name="" id=""> Drama</li>
+              <li><input type="checkbox" name="" id=""> Fantasy</li>
+              <li><input type="checkbox" name="" id=""> Horror</li>
+              <li><input type="checkbox" name="" id=""> Romance</li>
+              <li><input type="checkbox" name="" id=""> Sci-fi</li>
+              <li><input type="checkbox" name="" id=""> Sport</li>
+              <li><a href="../phim/index2.html">Phim đang chiếu</a></li>
+              <li><a href="../phim/index3.html">Phim sắp chiếu</a></li>
+              <img src="./asset/img/Popcorn.png" alt="Popcorn">
+            </ul>
+          </div>
+          <div class="main-container col-lg-9 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie1.jpg" alt="Movie1">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">THE CREATOR</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie2.jpg" alt="Movie2">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">PAST LIVES</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie3.jpg" alt="Movie3">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">EXPEND4ABLES</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie4.jpg" alt="Movie4">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">SLEEP</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie5.jpg" alt="Movie5">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">IT LIVES INSIDE</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie6.jpg" alt="Movie6">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">DR.CHEON AND LOST TALISMAN</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie7.jpg" alt="Movie7">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">KUMARN</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie8.jpg" alt="Movie8">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">GIAO LỘ 8675</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="movie-container"> 
+                  <a href="#">
+                    <img src="./asset/img/Movie9.jpg" alt="Movie9">
+                  </a>
+                  <a href="../phim/index2.html">
+                    <button class="movie-info js-movie-info"><span>Chi tiết</span></button>
+                  </a>
+                  <a href="#">
+                    <button class="movie-ticket js-buy-ticket"><span>Mua vé</span></button>
+                  </a>
+                </div>
+                <h4 class="movie-name">ACIDE</h4>
+                <div class="movie-rate">
+                  <input type="radio" id="star5" name="rate" value="5"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row pagination">
+                <ul class="pagination-list">
+                  <li class="pagination-list-item">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </li>
+                  <li class="pagination-list-item">1</li>
+                  <li class="pagination-list-item">2</li>
+                  <li class="pagination-list-item">3</li>
+                  <li class="pagination-list-item">4</li>
+                  <li class="pagination-list-item">5</li>
+                  <li class="pagination-list-item">...</li>
+                  <li class="pagination-list-item">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </li>
+                  <div class="bar"></div>
+                </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h2 class="comment-header"><a class="comment-header-link" href="#">Bình luận phim</a></h2>
+            <div class="row">
+              <div class="col-lg-4 col-md-12 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Comment1.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                     [Preview] Đất Rừng Phương Nam: Có Vượt Qua Cái Bóng Khổng Lồ Của Bản Cũ?
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">0</span> Like
+                      </button>
+                      <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>46</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    26 năm sau phiên bản truyền hình, tiểu thuyết Đất Rừng Phương Nam được lấy cảm hứng thực hiện phiên bản phim chiếu rạp. Đây là một trong những tác phẩm đầu tư nhất lịch sử điện ảnh Việt Nam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Comment2.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      [Review] The Nun 2: Valak Đã "Ngủ Yên"?
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">262</span> Like
+                      </button>
+                      <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>10002</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    The Nun 2 có thể xem là bản nâng cấp hoàn hảo từ phần đầu tiên. U ám hơn, đáng sợ hơn, quỷ quyệt hơn. Sự báng bổ lần này của Valak thậm chí còn đen tối và táo bạo gấp nhiều lần trước đây.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Comment3.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      [Review] The Creator: Khi Robot Biết Nói Tiếng Việt Và Nhân Văn Hơn Cả Con Người
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">24</span> Like
+                     </button>
+                     <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>323</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    Với những khán giả mong muốn có một trải nghiệm điện ảnh vừa thư giãn vừa giải trí tại rạp chiếu phim, The Creator sẽ là lựa chọn thích hợp nhất đáp ứng các tiêu chí trên.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Comment4.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      [Review] A Haunting In Venice: Khi Thám Tử Đối Đầu Ma Quỷ!
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">11</span> Like
+                     </button>
+                     <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>3232</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    Hành trình trên màn ảnh rộng của vị thám tử Hercule Poirot do Ngài Kenneth Branagh thủ vai đã đi tới phim chiếu rạp thứ 3.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="comment-header"><a class="comment-header-link" href="#">Blog điện ảnh</a></h2>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Blog1.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      The Exorcist - Thương Hiệu Kinh Dị Đình Đám Nhất Thế Kỷ 20 Trở Lại
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">1</span> Like
+                      </button>
+                      <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    Được mệnh danh là “phim kinh dị gây ám ảnh nhất mọi thời đại”, thương hiệu Quỷ Ám (The Exorcist) chắc chắn không quá xa lạ gì với những fan hâm mộ dòng phim kinh dị. Bộ phim hay ra mắt vào năm 1973 này đã gây tiếng vang lớn, khi ấy có rất nhiều khán giả xếp hàng dài chỉ chờ vào mua vé. Đây cũng là tác phẩm quan trọng trong nền văn hóa đại chúng thế giới, tiền đề của thể loại “quỷ ám” hiện nay. Chính vì vậy, sự trở lại sau 50 năm của thương hiệu này mang tên Quỷ Ám: Tín Đồ (tựa gốc: The Exorcist: Believer) chắc chắn sẽ là bom tấn kinh dị đáng trông đợi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Blog2.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      Có Gì Mới Trong Bom Tấn Sắp Ra Mắt Của Leonardo DiCaprio?
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">36</span> Like
+                      </button>
+                      <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>1062</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    Tựa phim mới nhất của đạo diễn huyền thoại Martin Scorsese có tên gọi Killers of the Flower Moon: Vầng Trăng Máu. Tác phẩm gồm sự tham gia của dàn diễn viên toàn sao Leonardo DiCaprio, Robert De Niro và Jesse Plemons…, hiện đang được các tín đồ điện ảnh vô cùng mong chờ. Sau buổi ra mắt tại Cannes, phim đã nhận về nhiều lời khen nồng nhiệt và còn được cho là "bộ phim sáng tạo xuất sắc nhất của Martin Scorsese trong nhiều thập kỷ". Mới đây, nhà sản xuất tung đoạn trailer chính thức cuối cùng, hé lộ nhiều hơn về cuộc xung đột thảm khốc đã xảy ra ở Osage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Blog3.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      Lục Lọi Những Easter Egg Ẩn Giấu Trong The Nun II
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">15</span> Like
+                      </button>
+                      <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>821</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    Tong dịp hè năm nay, The Nun 2 mang ác quỷ đình đám Valak trở lại cùng chương tiếp theo trong Vũ trụ The Conjuring. Bộ phim mang đến nhiều phân đoạn thót tim, hồi hộp nhưng cũng gây tò mò với “fan ruột” nhờ nhiều chi tiết Easter Egg cài cắm xuyên suốt, cũng như một phân đoạn After-Credit thú vị hé lộ bước đi tiếp theo của vũ trụ phim kinh dị này.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 comment-container-img">
+                <a class="comment-link" href="#">
+                  <img class="comment-img" src="./asset/img/Blog4.jpg" alt="Comment1">
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="comment-container-text">
+                    <a class="comment-title" href="#">
+                      Valak Đã "Đại Náo" Phòng Vé Ra Sao?
+                    </a>
+                    <div class="comment-block hide-on-mobile-tablet">
+                      <button class="comment-like__btn">
+                        <i class="icon far fa-thumbs-up"></i>
+                        <span class="count">110</span> Like
+                      </button>
+                      <div class="comment-view">
+                        <i class="fa-regular fa-eye"></i>
+                        <span>1216</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="comment-paragraph">
+                    The Nun 2 mang đến nhiều điểm khác biệt, mới lạ dành cho khán giả. Từ không gian, thời gian đến cả dàn nhân vật. Phim vẫn sẽ giữ một số nhân vật quan trọng mang tính chủ chốt như Valak, sơ Irene (Taissa Farmiga), chàng Frenchie đáng thương (Jonas Bloquet) hay con được gọi bằng cái tên Maurice, cũng là “vật chứa” mới của Valak sau phần 1. Cha xứ Burke rất tiếc sẽ không tham gia vào vụ này, vì sơ Irene bắt buộc phải “trưởng thành” và có cơ hội tự mình chịu trách nhiệm một vụ án.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="main-sale">
+            <h1 class="sale-header">EVENT</h1>
+            <div class="row" style="margin-top: 16px;">
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a class="sale-link" href="#">
+                    <img src="./asset/img/Sale1.jpg" alt="Sale1">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale2.jpg" alt="Sale2">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale3.jpg" alt="Sale3">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale4.jpg" alt="Sale4">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 16px;">
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale5.jpg" alt="Sale5">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale6.jpg" alt="Sale6">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale7.jpg" alt="Sale7">
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sale-container">
+                  <a href="#">
+                    <img src="./asset/img/Sale8.jpg" alt="Sale8">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <h1 class="info-header">DMHT CINEMA</h1>
+          <p class="info-paragraph">
+            <span><a href="#">DMHT Cinema</a></span> là một trong những công đầu tiên về điện ảnh được thành lập từ năm 2023, đã khẳng định thương hiệu là 1 trong 10 địa điểm vui chơi giải trí được yêu thích nhất trên thế giới. Ngoài hệ thống rạp chiếu phim hiện đại, thu hút hàng triệu lượt người đến xem, DMHT Cinema còn hấp dẫn khán giả bởi không khí thân thiện cũng như chất lượng dịch vụ hàng đầu.
+            <br>
+            Đến web <span><a href="#">DMHT Cinema</a></span>, khách hàng sẽ dễ dàng tham khảo các phim hay nhất, phim mới nhất đang chiếu hoặc sắp chiếu luôn được cập nhật thường xuyên. Lịch chiếu tại tất cả hệ thống rạp chiếu phim của DMHT Cinema cũng được cập nhật đầy đủ hàng ngày hàng giờ trên trang chủ.
+            <br>
+            Từ vũ trụ điện ảnh Marvel, người hâm mộ sẽ có cuộc tái ngộ với Người Nhện qua Spider-Man: No Way Home hoặc Doctor Strange 2. Ngoài ra 007: No Time To Die, Turning Red, Minions: The Rise Of Gru..., là những tác phẩm hứa hẹn sẽ gây bùng nổ phòng vé trong thời gian tới.
+            <br>
+            Giờ đây đặt vé tại <span><a href="#">DMHT Cinema</a></span> càng thêm dễ dàng chỉ với vài thao tác vô cùng đơn giản. Để mua vé, hãy vào tab Mua vé. Quý khách có thể chọn Mua vé theo phim, theo rạp, hoặc theo ngày. Sau đó, tiến hành mua vé theo các bước hướng dẫn. Chỉ trong vài phút, quý khách sẽ nhận được tin nhắn và email phản hồi Đặt vé thành công của DMHT Cinema. Quý khách có thể dùng tin nhắn lấy vé tại quầy vé của DMHT Cinema hoặc quét mã QR để một bước vào rạp mà không cần tốn thêm bất kỳ công đoạn nào nữa.
+            <br>
+            Nếu bạn đã chọn được phim hay để xem, hãy đặt vé cực nhanh bằng box Mua Vé Nhanh ngay từ Trang Chủ. Chỉ cần một phút, tin nhắn và email phản hồi của DMHT Cinema sẽ gửi ngay vào điện thoại và hộp mail của bạn.
+            <br>
+            Nếu chưa quyết định sẽ xem phim mới nào, hãy tham khảo các bộ phim hay trong mục Phim Đang Chiếu cũng như Phim Sắp Chiếu tại rạp chiếu phim bằng cách vào mục Bình Luận Phim ở Góc Điện Ảnh để đọc những bài bình luận chân thật nhất, tham khảo và cân nhắc. Sau đó, chỉ việc đặt vé bằng box Mua Vé Nhanh ngay ở đầu trang để chọn được suất chiếu và chỗ ngồi vừa ý nhất.  
+            <br>
+            <span><a href="#">DMHT Cinema</a></span> luôn có những chương trình khuyến mãi, ưu đãi, quà tặng vô cùng hấp dẫn như giảm giá vé, tặng vé xem phim miễn phí, tặng Combo, tặng quà phim…  dành cho các khách hàng.
+            <br>
+            Trang web <span><a href="#">DMHT Cinema</a></span> còn có mục Góc Điện Ảnh - nơi lưu trữ dữ liệu về phim, diễn viên và đạo diễn, những bài viết chuyên sâu về điện ảnh, hỗ trợ người yêu phim dễ dàng hơn trong việc lựa chọn phim và bổ sung thêm kiến thức về điện ảnh cho bản thân. Ngoài ra, vào mỗi tháng, DMHT Cinema cũng giới thiệu các phim sắp chiếu hot nhất trong mục Phim Hay Tháng .
+            <br>
+            Hiện nay, <span><a href="#">DMHT Cinema</a></span> đang ngày càng phát triển hơn nữa với các chương trình đặc sắc, các khuyến mãi hấp dẫn, đem đến cho khán giả những bộ phim bom tấn của thế giới và Việt Nam nhanh chóng và sớm nhất.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h2 class="footer-header">Giới thiệu thành viên</h2>
+            <ul class="footer-list">
+              <li class="footer-list-item">Trần Tiến Dũng</li>
+              <li class="footer-list-item">Trần Minh Hiếu</li>
+              <li class="footer-list-item">Nguyễn Minh</li>
+              <li class="footer-list-item">Nguyễn Mai Thanh</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h2 class="footer-header">Điều khoản sử dụng</h2>
+            <ul class="footer-list">
+              <a class="footer-list-item-link" href="#">
+                <li class="footer-list-item">Điều khoản chung</li>
+              </a>
+              <a class="footer-list-item-link" href="#">
+                <li class="footer-list-item">Điều khoản giao dịch</li>
+              </a>
+              <a class="footer-list-item-link" href="#">
+                <li class="footer-list-item">Chính sách thanh toán</li>
+              </a>
+              <a class="footer-list-item-link" href="#">
+                <li class="footer-list-item">Chính sách bảo mật</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h2 class="footer-header">Chăm sóc khách hàng</h2>
+            <ul class="footer-list">
+              <li class="footer-list-item">Hotline: 6999999</li>
+              <li class="footer-list-item">Giờ làm việc: 8h00 - 22h00</li>
+              <li class="footer-list-item">Email: abc@gmail.com</li>
+              <li class="footer-list-item">Địa chỉ: ĐH GTVT</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="row">
+              <h2 class="footer-header">Kết nối với chúng tôi</h2>
+              <ul class="footer-list-apps">
+                <li class="footer-list-item">
+                  <a class="footer-list-item-link" href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-item-link" href="#">
+                    <i class="fa-brands fa-square-youtube"></i>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-item-link" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-item-link" href="#">
+                    <i class="fa-brands fa-square-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <h2 class="footer-header">DOWNLOAD</h2>
+              <ul class="footer-list-apps">
+                <li class="footer-list-item">
+                  <a class="footer-list-item-link" href="#">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                  </a>
+                </li>
+                <li class="footer-list-item">
+                  <a class="footer-list-item-link" href="#">
+                    <i class="fa-brands fa-google-play"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal--box js-modal--box">
+      <div class="modal--container js-modal--container">
+        <div class="modal--close js-modal--close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <header class="modal--header">
+          <i class="modal--header-icon fa-solid fa-film"></i>
+          Lịch chiếu phim
+        </header>
+
+        <div class="modal--body">
+          <div class="modal--day">
+            <ul class="modal--day-list">
+              <li class="modal--day-list-item">06/10 - T6</li>
+              <li class="modal--day-list-item">07/10 - T7</li>
+              <li class="modal--day-list-item">08/10 - CN</li>
+              <li class="modal--day-list-item">09/10 - T2</li>
+
+            </ul>
+          </div>
+          <div class="modal--hour">
+            <h3>Rạp 2D</h3>
+            <ul class="modal--hour-list">
+              <li class="modal--hour-list-item">16:30</li>
+              <li class="modal--hour-list-item">20:30</li>
+              <li class="modal--hour-list-item">22:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-login-container">
+      <div class="modal-main-form-container">
+        <div id="modal-form_section" class="modal-form-container">
+          <div class="modal-signUp-form modal-form-wraper ">
+            <form>
+              <div class="modal-form-title">
+                <h2>Sign Up</h2>
+              </div>
+              <div class="modal-input-group">
+                <div class="modal-login-box">
+                  <span>
+                    <input placeholder="Full Name" class="modal-myInput" required type="text" id="name"/>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-input-group">
+                <div class="modal-login-box">
+                  <span>
+                    <input placeholder="Email" class="modal-myInput" required type="email" id="email"/>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-input-group">
+                <div class="modal-login-box">
+                  <span>
+                    <input placeholder="Mobile No." class="modal-myInput" required type="text" id="phonenumber"/>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-input-group">
+                <div class="modal-login-box">
+                  <span>
+                    <input placeholder="Password" class="modal-myInput" required type="password" id="password"/>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="modal-action-button">
+                <button type="submit" value="send" id="submit">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-login-form modal-form-wraper">
+            <form>
+              <div class="modal-form-title">
+                <h2>Login</h2>
+              </div>
+              <div class="modal-input-group">
+                <div class="modal-login-box">
+                  <span>
+                    <input placeholder="Email" class="modal-myInput" required type="text" id="email2"/>
+                  </span>
+                </div>
+              </div>
+              <div style="margin-bottom: 0px;" class="input-group">
+                <div class="modal-login-box">
+                  <span>
+                    <input placeholder="Password" class="myInput" required type="password" id="password2"/>
+                  </span>
+                </div>
+              </div>
+              <div class="modal-forget-password">
+                <a href="#">FORGOT PASSWORD</a>
+              </div>
+              <div class="modal-action-button">
+                <button type="submit" value="send" id="submit2">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="modal-multiple-btn" class="modal-bg-btn-container">
+          <div class="modal-action-button">
+            <button>Sign Up</button>
+          </div>
+          <div class="modal-action-button">
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>

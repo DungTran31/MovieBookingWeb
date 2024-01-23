@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>DMHT Cinema</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logofavicon.ico"/>
+  </head>
+<body>
+    <div class="main-page">
+        <div  class="header">
+          <nav class="header__navbar ">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item hide-on-mobile-tablet">
+                  <i class="header__navbar-icon far fa-bell"></i>
+                  <a href="/" class="header__navbar-item-link">
+                      Thông báo
+                  </a>
+                </li>
+                <li class="header__navbar-item hide-on-mobile-tablet">
+                  <i class="header__navbar-icon fa-solid fa-clock-rotate-left"></i>
+                  <a href="/" class="header__navbar-item-link">
+                      Lịch sử
+                  </a>
+                </li>
+                <li class="header__navbar-item hide-on-mobile-tablet">
+                  <i class="header__navbar-icon far fa-question-circle"></i>
+                  <a href="/" class="header__navbar-item-link">
+                      Trợ giúp
+                  </a>
+                </li>
+                <li class="header__navbar-item hide-on-mobile header__navbar-item--separate"><h2 class="header__navbar-item-link js-login">Ðăng ký</h2></li>
+                <li class="header__navbar-item hide-on-mobile"><h2 class="header__navbar-item-link js-login">Ðăng nhập</h2></li>
+            </ul>
+          </nav>
+          <div class="header__search">
+            <a href="../main_page/index.html"><img class="header__logo" alt="Logo nhóm" src="images/Logo.png"/></a>
+            <div class="search-bar1 hide-on-mobile-tablet">
+              <input class="search-input" type="text" placeholder="Tìm kiếm">
+              <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+            <img class="header__img hide-on-mobile-tablet" src="images/Ticket.png" alt="Ticket">
+          </div>
+          
+          <div class="header__navbar-list-head hide-on-mobile-tablet"">
+            <ul class="header__navbar-list2">
+              <li class="header__navbar-item"><a class="header__navbar-item-link" href="#">Lịch chiếu phim</a></li>
+              <li class="header__navbar-item"><a class="header__navbar-item-link" href="../phim/index2.html">Phim</a></li>
+              <li class="header__navbar-item"><a class="header__navbar-item-link" href="../sale/index.html">Ưu dãi</a></li>
+              <li class="header__navbar-item"><a class="header__navbar-item-link" href="#">Thành viên</a></li>
+              <li class="header__navbar-item"><a class="header__navbar-item-link" href="#">Hỗ trợ</a></li>
+            </ul>
+          </div>
+        </div>
+<div class="container">
+        <div class="navbar-showtime">
+        <ul class="navbar-list">
+            <li class="T2"><a href="#">2/10-T2</a></li>
+            <li><a href="#">3/10-T3</a></li>
+            <li><a href="#">4/10-T4</a></li>
+            <li><a href="#">5/10-T5</a></li> 
+            <li><a href="#">6/10-T6</a></li>
+            <li><a href="#">7/10-T7</a></li>
+            <li><a href="#">8/10-CN</a></li>
+        </ul>
+        </div>
+<div class="container-2">
+    <div class="kkt">
+        <img class="img1" src="images/img1.jpg">
+    </div>
+    <div class="gioithieukkt">
+        <p class="tenphim"><a href="" onclick="showkkt()">Kẻ kiến tạo</a></p>
+        <p class="theloai"><i class="fa-solid fa-tag"></i> Hành động, Phiêu lưu</p>
+        <p class="thoigian"><i class="fa-regular fa-clock"></i>133 phút</p>
+        <p class="cachchieu">2D phụ đề</p>
+        <ul>
+            <li><button onclick="showTable()"> 8:00</button></li>
+            <li><button onclick="showTable()"> 10:30</button></li>
+            <li><button onclick="showTable()"> 12:30</button></li>
+            <li><button onclick="showTable()"> 14:00</button></li>
+            <li><button onclick="showTable()"> 16:30</button></li>
+            <li><button onclick="showTable()"> 19:00</button></li>
+            <li><button onclick="showTable()"> 21:30</button></li>
+            <li><button onclick="showTable()"> 22:30</button></li>
+            <li><button onclick="showTable()"> 23:45</button></li>
+        </ul>
+    </div>
+</div>
+    <div class="container-3">
+        <div class="row-2">
+            <div class="img-kkt">
+              <img src="images/img2.jpg">
+            </div>
+            <div class="in4-aqms" >
+                <p class="tenphim"><a href="#">Ác quỷ ma sơ</a></p>
+                <p class="theloai"><i class="fa-solid fa-tag"></i> Kinh dị</p>
+                <p class="thoigian"><i class="fa-regular fa-clock"></i>87 phút</p>
+                <p class="cachchieu">2D phụ đề</p>
+                <div class="giochieu">
+                    <div>
+                        <ul>
+                            <li><button onclick="showTable()"> 8:00</button></li>
+                            <li><button onclick="showTable()"> 10:30</button></li>
+                            <li><button onclick="showTable()"> 12:30</button></li>
+                            <li><button onclick="showTable()"> 14:00</button></li>
+                            <li><button onclick="showTable()"> 16:30</button></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><button onclick="showTable()"> 18:00</button></li>
+                            <li><button onclick="showTable()"> 19:30</button></li>
+                            <li><button onclick="showTable()"> 21:30</button></li>
+                            <li><button onclick="showTable()"> 22:00</button></li>
+                            <li><button onclick="showTable()"> 23:30</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="img-GL"><img src="images/img3.jpg"></div>
+            <div class="in4-gl">
+                <p class="tenphim"><a href="#">Giao lộ 8675</a></p>
+                <p class="theloai"><i class="fa-solid fa-tag"></i> Hành động, hài hước</p>
+                <p class="thoigian"><i class="fa-regular fa-clock"></i>107 phút</p>
+                <p class="cachchieu">2D phụ đề</p>
+                <div class="giochieu">
+                    <div>
+                        <ul>
+                            <li><button onclick="showTable()"> 8:00</button></li>
+                            <li><button onclick="showTable()"> 10:30</button></li>
+                            <li><button onclick="showTable()"> 12:30</button></li>
+                            <li><button onclick="showTable()"> 14:00</button></li>
+                            <li><button onclick="showTable()"> 16:30</button></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><button onclick="showTable()"> 17:00</button></li>
+                            <li><button onclick="showTable()"> 18:30</button></li>
+                            <li><button onclick="showTable()"> 19:45</button></li>
+                            <li><button onclick="showTable()"> 21:00</button></li>
+                            <li><button onclick="showTable()"> 22:30</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+</div>
+<div class="container-3">
+  <div class="row-2">
+        <div class="img-kkt"><img src="images/img4.jpg"></div>
+        <div class="in4-aqms">
+            <p class="tenphim"><a href="#">Kumanthong</a></p>
+            <p class="theloai"><i class="fa-solid fa-tag"></i> Kinh dị, giật gân, hồi hộp</p>
+            <p class="thoigian"><i class="fa-regular fa-clock"></i>133 phút</p>
+            <p class="cachchieu">3D thuyết minh</p>
+            <div class="giochieu">
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 8:00</button></li>
+                        <li><button onclick="showTable()"> 10:30</button></li>
+                        <li><button onclick="showTable()"> 12:30</button></li>
+                        <li><button onclick="showTable()"> 14:00</button></li>
+                        <li><button onclick="showTable()"> 16:30</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 17:00</button></li>
+                        <li><button onclick="showTable()"> 18:30</button></li>
+                        <li><button onclick="showTable()"> 19:15</button></li>
+                        <li><button onclick="showTable()"> 20:05</button></li>
+                        <li><button onclick="showTable()"> 21:15</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="row-3">
+        <div class="img-GL"><img src="images/img5.jpg"></div>
+        <div class="in4-gl">
+            <p class="tenphim"><a href="#">Thanh guom trừ tà</a></p>
+            <p class="theloai"><i class="fa-solid fa-tag"></i> Hài hước, kinh dị</p>
+            <p class="thoigian"><i class="fa-regular fa-clock"></i>98 phút</p>
+            <p class="cachchieu">2D phụ đề</p>
+            <div class="giochieu">
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 8:00</button></li>
+                        <li><button onclick="showTable()"> 10:30</button></li>
+                        <li><button onclick="showTable()"> 12:30</button></li>
+                        <li><button onclick="showTable()"> 14:00</button></li>
+                        <li><button onclick="showTable()"> 16:30</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 19:00</button></li>
+                        <li><button onclick="showTable()"> 20:30</button></li>
+                        <li><button onclick="showTable()"> 20:45</button></li>
+                        <li><button onclick="showTable()"> 21:00</button></li>
+                        <li><button onclick="showTable()"> 22:30</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="container-3">
+    <div class="row-2">
+        <div class="img-kkt"><img src="images/img6.jpg"></div>
+        <div class="in4-aqms">
+            <p class="tenphim"><a href="#">Quỷ ám: Tín đồ</a></p>
+            <p class="theloai"><i class="fa-solid fa-tag"></i> Kinh dị</p>
+            <p class="thoigian"><i class="fa-regular fa-clock"></i>111 phút</p>
+            <p class="cachchieu">2D thuyết minh</p>
+            <div class="giochieu">
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 8:00</button></li>
+                        <li><button onclick="showTable()"> 10:30</button></li>
+                        <li><button onclick="showTable()"> 12:30</button></li>
+                        <li><button onclick="showTable()"> 14:00</button></li>
+                        <li><button onclick="showTable()"> 16:30</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 17:00</button></li>
+                        <li><button onclick="showTable()"> 18:30</button></li>
+                        <li><button onclick="showTable()"> 19:45</button></li>
+                        <li><button onclick="showTable()"> 20:00</button></li>
+                        <li><button onclick="showTable()"> 21:15</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="img-GL"><img src="images/img7.jpg"></div>
+        <div class="in4-gl">
+            <p class="tenphim"><a href="#">Biệt đội đánh thuê 4</a></p>
+            <p class="theloai"><i class="fa-solid fa-tag"></i> Hành động, phiêu lưu</p>
+            <p class="thoigian"><i class="fa-regular fa-clock"></i>103 phút</p>
+            <p class="cachchieu" >2D phụ đề</p>
+            <div class="giochieu">
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 8:00</button></li>
+                        <li><button onclick="showTable()"> 10:30</button></li>
+                        <li><button onclick="showTable()"> 12:30</button></li>
+                        <li><button onclick="showTable()"> 14:00</button></li>
+                        <li><button onclick="showTable()"> 16:30</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><button onclick="showTable()"> 16:45</button></li>
+                        <li><button onclick="showTable()"> 18:30</button></li>
+                        <li><button onclick="showTable()"> 19:45</button></li>
+                        <li><button onclick="showTable()"> 20:00</button></li>
+                        <li><button onclick="showTable()"> 21:00</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <div class="container-4">
+      <div class="hotphim">
+        
+        <p>Phim hot trong tuần</p>
+        <img onclick="showinfphimhot()" src="images/img1.jpg">
+      </div>
+      <div class="slideshow">
+        <p >Phim sắp chiếu</p>
+    <img id="img" onclick="Info()">
+    </div>
+    
+
+    </div>
+</div>
+
+
+</div>
+</div>
+<div class="footer">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="footer-header">Giới thiệu thành viên</h2>
+        <ul class="footer-list">
+          <li class="footer-list-item">Trần Tiến Dũng</li>
+          <li class="footer-list-item">Trần Minh Hiếu</li>
+          <li class="footer-list-item">Nguyễn Minh</li>
+          <li class="footer-list-item">Nguyễn Mai Thanh</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h2 class="footer-header">Ðiều khoản sử dụng</h2>
+        <ul class="footer-list">
+          <a class="footer-list-item-link" href="#">
+            <li class="footer-list-item">Ðiều khoản chung</li>
+          </a>
+          <a class="footer-list-item-link" href="#">
+            <li class="footer-list-item">Điều khoản giao dịch</li>
+          </a>
+          <a class="footer-list-item-link" href="#">
+            <li class="footer-list-item">Chính sách thanh toán</li>
+          </a>
+          <a class="footer-list-item-link" href="#">
+            <li class="footer-list-item">Chính sách bảo mật</li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h2 class="footer-header">Chăm sóc khách hàng</h2>
+        <ul class="footer-list">
+          <li class="footer-list-item">Hotline: 6999999</li>
+          <li class="footer-list-item">Giờ làm việc: 8h00 - 22h00</li>
+          <li class="footer-list-item">Email: abc@gmail.com</li>
+          <li class="footer-list-item">Địa chỉ: ÐH GTVT</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="row">
+          <h2 class="footer-header">Kết nối với chúng tôi</h2>
+          <ul class="footer-list-apps">
+            <li class="footer-list-item">
+              <a class="footer-list-item-link" href="">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-item-link" href="">
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-item-link" href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-item-link" href="">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h2 class="footer-header">DOWNLOAD</h2>
+          <ul class="footer-list-apps">
+            <li class="footer-list-item">
+              <a class="footer-list-item-link" href="">
+                <i class="fa-brands fa-app-store-ios"></i>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-list-item-link" href="">
+                <i class="fa-brands fa-google-play"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-login-container">
+    <div class="modal-main-form-container">
+      <div id="modal-form_section" class="modal-form-container">
+        <div class="modal-signUp-form modal-form-wraper ">
+          <form>
+            <div class="modal-form-title">
+              <h2>Sign Up</h2>
+            </div>
+            <div class="modal-input-group">
+              <div class="modal-login-box">
+                <span>
+                  <input placeholder="Full Name" class="modal-myInput" required type="text" id="name"/>
+                </span>
+              </div>
+            </div>
+            <div class="modal-input-group">
+              <div class="modal-login-box">
+                <span>
+                  <input placeholder="Email" class="modal-myInput" required type="email" id="email"/>
+                </span>
+              </div>
+            </div>
+            <div class="modal-input-group">
+              <div class="modal-login-box">
+                <span>
+                  <input placeholder="Mobile No." class="modal-myInput" required type="text" id="phonenumber"/>
+                </span>
+              </div>
+            </div>
+            <div class="modal-input-group">
+              <div class="modal-login-box">
+                <span>
+                  <input placeholder="Password" class="modal-myInput" required type="password" id="password"/>
+                </span>
+              </div>
+            </div>
+            
+            <div class="modal-action-button">
+              <button type="submit" value="send" id="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-login-form modal-form-wraper">
+          <form>
+            <div class="modal-form-title">
+              <h2>Login</h2>
+            </div>
+            <div class="modal-input-group">
+              <div class="modal-login-box">
+                <span>
+                  <input placeholder="Email" class="modal-myInput" required type="text" id="email2"/>
+                </span>
+              </div>
+            </div>
+            <div style="margin-bottom: 0px;" class="input-group">
+              <div class="modal-login-box">
+                <span>
+                  <input placeholder="Password" class="myInput" required type="password" id="password2"/>
+                </span>
+              </div>
+            </div>
+            <div class="modal-forget-password">
+              <a href="#">FORGOT PASSWORD</a>
+            </div>
+            <div class="modal-action-button">
+              <button type="submit" value="send" id="submit2">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="modal-multiple-btn" class="modal-bg-btn-container">
+        <div class="modal-action-button">
+          <button>Sign Up</button>
+        </div>
+        <div class="modal-action-button">
+          <button>Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="chonGhe" class="chonghe">
+    <table class="ghe">
+        <tr>
+            <th style="text-align: center;" colspan="6"><i class="fa-solid fa-tv"></i></th>
+        </tr>
+        <tr style="font-size: 50%;">
+            <th>Dãy</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+        <tr>
+        <th>A</th>
+        <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+        <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+        <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+        <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+        <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+    </tr>
+        <tr>
+            <th>B</th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+        </tr>
+        <tr>
+            <th>C</th>
+            <th><a onclick="tbao(id)" href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+        </tr>
+        <tr>
+            <th>D</th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+        </tr>
+        <tr>
+            <th>E</th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+            <th><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i></th>
+        </tr>
+        <tr>
+            <th>F</th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-chair"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-chair"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-couch"></i></a></th>
+            <th><a onclick="tbao(id)"  href=""><i class="fa-solid fa-chair"></i></a></th>
+        </tr>
+        <tr>
+            <th style="text-align:right" colspan="6"><i class="fa-solid fa-door-open"></i></th>
+        </tr>
+    </table>
+    <ul style="padding-left: 100px;font-size:75%">
+        <li><i style="color:rgba(235, 235, 245, 0.6)" class="fa-solid fa-tv"></i>  Vị trí máy chiếu</li>
+        <li><i style="color:aliceblue" class="fa-solid fa-couch"></i>  Ghế trống</li>
+        <li><i style="color: rgb(244, 13, 194);" class="fa-solid fa-couch"></i>  Ghế đã được đặt trước</li>
+        <li><i style="color:rgba(235, 235, 245, 0.6)"" class="fa-solid fa-chair"></i>  Ghế V.I.P</li>
+        <li><i style="color:rgba(235, 235, 245, 0.6)"" class="fa-solid fa-door-open"></i>  Lối vào</li>
+    </ul>
+    <div id="X" class="x"><button onclick="out()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+</div>
+  <script src="./main.js"></script>
+</body>
+</html>

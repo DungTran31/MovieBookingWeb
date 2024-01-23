@@ -1,0 +1,148 @@
+@media (max-width: 992px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        min-height: 160px;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+
+    .header__search {
+        position: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .header__navbar-item h2 {
+        font-size: 20px;
+    }
+    .container{
+        padding-top: 130px;
+    }
+    .container .navbar-showtime ul li{
+        align-items: center;
+        text-align: center;
+
+    }
+    .gioithieukkt{
+        padding-left: 20px;
+    }
+    .container-3{
+        display: block;
+    }
+    .row-2{
+        width: 100%;
+        font-size: 22px;
+        border-bottom: 1px solid black;
+        padding-bottom: 50px;
+    }
+    .row-2 img{
+        width: 100%;
+    }
+    .in4-aqms{
+        padding-left: 20px;
+    }
+    .row-3{
+        width: 100%;
+        font-size: 22px;
+        border-bottom: 1px solid black;
+        padding-bottom: 50px;
+    }
+    .row-3 img{
+        width: 100%;
+    }
+    .container-4{
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .hotphim{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .kkt img{
+        max-width: 50%;
+        height: 75%;
+    }
+    
+    
+
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 992px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__logo {
+        position: relative;
+        top: -30px;
+        left: 30%;
+    } 
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header__logo {
+        position: relative;
+        left: 30%;
+    } 
+}
+
+/* PC */
+@media (min-width: 993px) {
+    .hide-on-pc {
+        display: none;
+    }
+    .kkt{
+        max-width: 100%;
+    }
+    .container{
+        padding-top: 230px;
+    }
+    .gioithieukkt{
+        padding-left: 30px;
+    }
+    .row-2{
+        width: 45%;
+        margin-right: 5%;
+    }
+    .in4-aqms{
+        padding-left: 20px;
+    }
+    .row-3{
+        width: 45%;
+    }
+    .container-4{
+        display: flex;
+    }
+    .container-3{
+        padding-bottom: 50px;
+        border-bottom: 1px solid black;
+    }
+    .hotphim{
+        width: 45%;
+        margin-right: 5%;
+        align-items: center;
+    }
+    .slideshow{
+        width: 45%;
+        align-items: center;
+    }
+}
